@@ -15,21 +15,21 @@ public class Class_Example {
 		
 		//Set up for loop to begin game
 		
-		/*Need to set up score keeping integers.
-		 *If score equals zero then game ends; break for loop
-		 *If answer is correct then add points 
-		 *if answer is wrong then remove points 
-		 */
-	
+		//Need to set up score keeping integers.
+		//If score equals zero then game ends; break for loop
+		//If answer is correct then add points 
+		//If answer is wrong then remove points 
+		
 		for (int i = 0;i<4;i++){
-		System.out.print(
-				"What is " + number1 + " + " + number2 + "? " );
-		
-		int answer = input.nextInt();
-		
-		System.out.println(
-				number1 + " + " + number2 + " = " + answer + " is " +
-				(number1 +number2 == answer));
+			System.out.print("What is " + number1 + " + " + number2 + "? " );
+			
+			int answer = input.nextInt();
+			
+			System.out.println(
+				number1 + " + " + number2 + " = " + 
+				answer + " is " +
+				(number1 +number2 == answer)
+			);
 		}
 				
 	}
