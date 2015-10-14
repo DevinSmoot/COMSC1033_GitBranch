@@ -67,12 +67,16 @@ public class COMSC1033_HW6 {
 			score -= 1;
 			//Show score
 			System.out.println("Score: " + score);
-			//Decrease hardness of the question
-			hardnessOfQuestion /= 10;
+			//Decrease hardness of the question while checking to make sure
+			//it is at always 10 at the lowest level.
+			if (hardnessOfQuestion == 10){
+				hardnessOfQuestion = 10;
+			}else{
+				hardnessOfQuestion /= 10;
+			}
 		}
 	}
 	System.out.println ("\nThanks for playing!");
 	System.out.println ("Your final score is: " + score);
 	}
-
 }
