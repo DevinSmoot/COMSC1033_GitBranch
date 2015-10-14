@@ -2,18 +2,8 @@
  *Date:			2015-10-11
  *Author:		Devin Smoot
  *Class:		COMSC1033
- *  
- *Program notes:
- *Score: 	Wrong answer points subtraction: -1 for first round, -2 for second round, etc; increases * 2 ea round
- *			HardnessOfQuestion divided by 10 each time wrong answer given down to 10
- * 		  	Correct answer point addition: +5 for first round, +10 for second round, etc; increases +5 ea round
- * 			HardnessOfQuestion multiplied by 10 each time correct answer given
- * 		  	Answer forced into integer; No decimals accepted TRY... CATCH
- * 		  	FOR... LOOP for entire program; One round with increasing numbers each round up to 4 rounds
- * 		  	Will end if score gets to 0
  */
 import java.util.Scanner;
-
 public class COMSC1033_HW6 {
 	public static void main(String[] args) {
 		//Define variables
@@ -57,6 +47,7 @@ public class COMSC1033_HW6 {
 			//Add points
 			score += 2;
 			//Show score
+			System.out.println("Two points gained!");
 			System.out.println("Score: " + score);
 			//Increase hardness of the question
 			hardnessOfQuestion *= 10;
@@ -66,6 +57,8 @@ public class COMSC1033_HW6 {
 			//Remove points
 			score -= 1;
 			//Show score
+			System.out.println("The correct answer was: " + correctAnswer);
+			System.out.println("A point was lost!");
 			System.out.println("Score: " + score);
 			//Decrease hardness of the question while checking to make sure
 			//it is at always 10 at the lowest level.
